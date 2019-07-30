@@ -4,7 +4,7 @@
 #
 Name     : mvn-jackson-core
 Version  : 2.1.5
-Release  : 6
+Release  : 7
 URL      : https://github.com/FasterXML/jackson-core/archive/jackson-core-2.1.5.tar.gz
 Source0  : https://github.com/FasterXML/jackson-core/archive/jackson-core-2.1.5.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.1.5/jackson-core-2.1.5.jar
@@ -13,6 +13,8 @@ Source3  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-cor
 Source4  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.pom
 Source5  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar
 Source6  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.pom
+Source7  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar
+Source8  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -39,22 +41,28 @@ data components for the mvn-jackson-core package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5/jackson-core-2.1.5.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.5/jackson-core-2.1.5.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.pom
 
 
 %files
@@ -68,3 +76,5 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/c
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.pom
+/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar
+/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.pom
